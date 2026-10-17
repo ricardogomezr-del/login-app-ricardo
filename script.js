@@ -15,7 +15,7 @@ function marcarError(entrada, texto) {
 formulario.addEventListener('submit', (evento) => {
   evento.preventDefault();
   const nombre = usuario.value.trim();
-  const clave = contrasena.value.trim();
+  const clave = contrasena.value; // Una contraseña puede contener espacios válidos.
   marcarError(usuario, nombre ? '' : 'Debes escribir tu usuario.');
   marcarError(contrasena, clave ? '' : 'Debes escribir una contraseña.');
   if (!nombre || !clave) {
