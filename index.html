@@ -1,3 +1,34 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Inicio | Login App Ricardo</title></head>
-<body><main><h1>Login App Ricardo</h1><p>Formulario de inicio de sesión en desarrollo.</p></main></body></html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="Proyecto académico de validación de formulario de ingreso, elaborado por Ricardo Gomez.">
+ <title>Inicio de sesión | Ricardo Gómez</title>
+ <link rel="stylesheet" href="styles.css">
+ <script src="script.js" defer></script>
+</head>
+<body>
+ <main class="layout">
+  <section class="intro" aria-labelledby="encabezado">
+   <span class="eyebrow">CECAR · Taller de Git y GitHub</span>
+   <h1 id="encabezado">Un espacio para comenzar.</h1>
+   <p>Demostración académica de un formulario de inicio de sesión con validación básica.</p>
+   <div class="decor" aria-hidden="true"><span></span><span></span><span></span></div>
+  </section>
+  <section class="login-card" aria-labelledby="titulo-formulario">
+   <div class="initials" aria-hidden="true">RG</div>
+   <h2 id="titulo-formulario">Iniciar sesión</h2>
+   <p class="support">Ingresa usuario y contraseña para probar el formulario.</p>
+   <form id="login-form" novalidate>
+    <div class="field"><label for="usuario">Usuario</label><input id="usuario" name="usuario" type="text" autocomplete="username" placeholder="Escribe tu usuario" required><small id="usuario-error" class="error" aria-live="polite"></small></div>
+    <div class="field"><label for="contrasena">Contraseña</label><input id="contrasena" name="contrasena" type="password" autocomplete="current-password" placeholder="Escribe tu contraseña" required><small id="contrasena-error" class="error" aria-live="polite"></small></div>
+    <button type="submit">Ingresar <span aria-hidden="true">→</span></button>
+    <p id="mensaje" role="status" aria-live="polite"></p>
+   </form>
+   <p class="disclaimer">Proyecto de demostración: no verifica identidades ni guarda contraseñas. No uses credenciales reales.</p>
+  </section>
+ </main>
+ <footer>Desarrollado por Ricardo Andres Gomez Ruiz · 2026</footer>
+</body>
+</html>
